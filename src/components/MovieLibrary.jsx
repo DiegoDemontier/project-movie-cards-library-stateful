@@ -27,12 +27,14 @@ class MovieLibrary extends Component {
   }
 
   onSearchTextChange(event) {
+    console.log(this.state);
     this.setState({
       [event.target.name]: event.target.value,
     });
   }
 
   onBookmarkedChange(event) {
+    console.log(event.target.checked);
     this.setState({
       bookmarkedOnly: event.target.checked,
     });
@@ -86,7 +88,7 @@ class MovieLibrary extends Component {
     const { searchText, bookmarkedOnly, selectedGenre } = this.state;
     return (
       <div>
-        <h2> My awesome movie library </h2>
+        <h2 className="page-subtitle"> My awesome movie library </h2>
         <SearchBar
           searchText={ searchText }
           onSearchTextChange={ this.onSearchTextChange }

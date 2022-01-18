@@ -19,9 +19,18 @@ body {
   text-align: center;
 }
 
+.page-subtitle {
+  color: #f8f9fa;
+  font-size: 35px;
+  font-weight: 500;
+  padding-top: 5px;
+  text-align: center;
+}
+
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
